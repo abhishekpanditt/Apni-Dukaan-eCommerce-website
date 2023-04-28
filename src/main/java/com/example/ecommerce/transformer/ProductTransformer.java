@@ -24,6 +24,7 @@ public class ProductTransformer {
                 .sellerName(product.getSeller().getName())
                 .quantity(product.getQuantity())
                 .productStatus(product.getProductStatus())
+                .price(product.getPrice())
                 .build();
     }
 }

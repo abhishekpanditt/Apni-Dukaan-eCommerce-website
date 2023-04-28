@@ -1,4 +1,4 @@
-package com.example.ecommerce.dto.ResponseDto;
+package com.example.ecommerce.dto.RequestDto;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -8,11 +8,11 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level= AccessLevel.PRIVATE)
 @Builder
-public class SellerResponseDto {
+public class UpdateProductRequestDto {
 
-    String name;
+    int productId;
 
-    int age;
+    int price;
 
-    String mobile;
+    int quantity;
 }

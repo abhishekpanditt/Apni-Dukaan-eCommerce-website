@@ -23,6 +23,7 @@ public class SellerTransformer {
         return SellerResponseDto.builder()
                 .name(seller.getName())
                 .age(seller.getAge())
+                .mobile(seller.getMobNo())
                 .build();
     }
 }

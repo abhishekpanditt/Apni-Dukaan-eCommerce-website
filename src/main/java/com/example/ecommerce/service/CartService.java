@@ -112,8 +112,12 @@ public class CartService {
     public void resetCart(Cart cart){
 
         cart.setCartTotal(0);
+        for(Item item: cart.getItems()){
+            item.setCart(null);
+        }
         cart.setNumberOfItems(0);
-        cart.setItems(new ArrayList<>());
+        cart.getItems().clear();
+
     }
 
     public CartResponseDto removeFromCart(int customerId, Item item) throws Exception {

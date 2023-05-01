@@ -67,7 +67,4 @@ public class CartController {
         return cartService.viewItems(customerId);
     }
 
-
-    // email sending
-    // my email - kunaljindal995@gmail.com
 }
